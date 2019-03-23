@@ -7,13 +7,13 @@ let options = {
     maximumAge: 0,
 };
 
-success = pos => {
+const success = pos => {
     coord = pos.coords;
     console.log(`Latitude: ${coord.latitude}`);
-    console.log(`Latitude: ${coord.longitude}`);
+    console.log(`Longitude: ${coord.longitude}`);
 };
 
-error = err => {
+const error = err => {
     console.warn(`ERREUR (${err.code}): ${err.message}`);
 };
 
