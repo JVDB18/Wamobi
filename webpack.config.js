@@ -97,12 +97,16 @@ module.exports = env => {
                 },
             ],
         },
+        devServer: {
+            historyApiFallback: true,
+          },
         plugins,
         optimization,
         performance: {hints: false},
         output: {
             path: resolve(__dirname, "./bin/client"),
             filename: env === "dev" ? "js/bundle.js" : "js/[chunkhash].js",
-        },
+            publicPath: '/',
+            },
     };
 };
