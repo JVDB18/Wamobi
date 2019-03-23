@@ -1,8 +1,8 @@
 import * as React from "react";
 
-class QR extends React.Component {
-    render() {
-        return <></>;
-    }
-}
+const QR = () => {
+    // eslint-disable-next-line no-unused-expressions
+    <></>;
+};
+
 export default QR;
