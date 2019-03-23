@@ -25,7 +25,7 @@ const Routes = () => (
                 component={Home} />
             <Route 
                 exact 
-                path="/user" 
+                path="/user/:id/account" 
                 component={Account} />
             <Route 
                 exact 

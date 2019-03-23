@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable react/jsx-no-literals */
 import * as React from "react";
 import {NavLink} from "react-router-dom";
@@ -6,25 +7,33 @@ const Nav = () => {
     return (
         <div>
             <nav>
-                <NavLink to="" activeClassName="selected">
+                <NavLink 
+                    to="/home" activeClassName="selected">
                     Home
                 </NavLink>
-                <NavLink to="" activeClassName="selected">
+                <NavLink 
+                    to="/user/:id/agenda" activeClassName="selected">
                     Agenda
                 </NavLink>
-                <NavLink to="" activeClassName="selected">
+                <NavLink 
+                    to="/user/:id/account" activeClassName="selected">
                     Account
                 </NavLink>
-                <NavLink to="" activeClassName="selected">
+                <NavLink 
+                    to="/user/:id/rewards" activeClassName="selected">
                     Rewards
                 </NavLink>
-                <NavLink to="" activeClassName="selected">
+                <NavLink
+                    to="/user/:id/myitineraries"
+                    activeClassName="selected">
                     My itineraries
                 </NavLink>
-                <NavLink to="" activeClassName="selected">
+                <NavLink 
+                    to="/user/:id/dashboard" activeClassName="selected">
                     Dashboard
                 </NavLink>
-                <NavLink to="" activeClassName="selected">
+                <NavLink 
+                    to="/user/:id/history" activeClassName="selected">
                     History
                 </NavLink>
             </nav>
