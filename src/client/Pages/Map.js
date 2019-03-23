@@ -8,9 +8,8 @@ let options = {
 };
 
 const success = pos => {
-    coord = pos.coords;
-    console.log(`Latitude: ${coord.latitude}`);
-    console.log(`Longitude: ${coord.longitude}`);
+    console.log(`Latitude: ${pos.coords.latitude}`);
+    console.log(`Longitude: ${pos.coords.longitude}`);
 };
 
 const error = err => {
