@@ -1,9 +1,9 @@
 import * as React from "react";
-// import styled from "styled-components";
+import Map from "./Map";
 
 class Home extends React.Component {
     render() {
-        return <></>;
+        return <Map />;
     }
 }
 export default Home;
